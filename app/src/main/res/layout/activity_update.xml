@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/UpdateView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#c02f1d"
+        android:gravity="center"
+        android:text="Update table"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updatePhno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Update Patient's Phone number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdatePname" />
+
+    <EditText
+        android:id="@+id/UpdateDisease"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Update patient's disease"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatePhno" />
+
+    <Button
+        android:id="@+id/Updatingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:text="Update"
+        android:background="#d2d436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDisease" />
+
+    <EditText
+        android:id="@+id/UpdatePname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateView"
+        android:src="@drawable/patientbed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

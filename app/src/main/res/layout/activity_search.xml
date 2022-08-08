@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchActivity">
+
+    <TextView
+        android:id="@+id/viewsearch"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:hint="Searched data result!!"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchName" />
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cd514a"
+        android:gravity="center"
+        android:text="Search in Database"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchingbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="107dp"
+        android:text="Search Data"
+        android:background="#43abc9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewsearch" />
+
+    <EditText
+        android:id="@+id/searchName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter patient name to be searched"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText"
+        android:src="@drawable/patientdoc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
